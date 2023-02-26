@@ -1,0 +1,13 @@
+.navbar {
+  /* background-color: #000; */
+}
+
+.navbar a {
+  color: #fff!important;
+  font-weight: bold;
+}
+
+.navbar-brand img {
+  width: 64px;
+  height: 32px;
+}

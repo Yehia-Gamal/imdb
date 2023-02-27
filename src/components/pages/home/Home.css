@@ -11,21 +11,21 @@
 .posterImage-overlay {
   position: absolute;
   padding: 5rem;
-  bottom: 0;
+  bottom: 0px;
   height: 70%;
   display: flex;
   flex-direction: column;
   width: 100%;
   justify-content: flex-end;
   align-items: flex-start;
-  background-image: linear-gradient(rgb(0, 0, 0, 0), rgb(0, 0, 0, 1));
-  color: white;
+  color: #fff;
+  background-image: linear-gradient(rgb(0,0,0,0), rgb(0,0,0,1));
   opacity: 1;
-  transition: opacity 0.3s;
+  transition: opacity .3s;
 }
 
 .posterImage-overlay:hover {
-  opacity: .7;
+  opacity: 1;
 }
 
 .posterImage-title {

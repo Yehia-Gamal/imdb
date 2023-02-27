@@ -1,6 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import Header from './components/header/Header';
+import MovieList from './components/movieList/MovieList';
 import Home from './components/pages/home/Home';
 
 function App() {
@@ -10,7 +11,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='movie/:id' element={<h1>Movie Details Page</h1>} />
-        <Route path='movies/:type' element={<h1>Movies List Page</h1>} />
+        <Route path='movies/:type' element={<MovieList />} />
         <Route path='/*' element={<h1><a href="/">Error Page Back To Home</a></h1>} />
       </Routes>
     </div>

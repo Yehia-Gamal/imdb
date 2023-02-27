@@ -60,6 +60,13 @@
   margin-bottom: 0.25rem;
 }
 
+.card-description-mobil {
+  font-style: italic;
+  font-size: .75rem;
+  margin-bottom: 0.25rem;
+  display: none;
+}
+
 
 @media(max-width: 767px) {
   .card {
@@ -71,5 +78,11 @@
   .card-overlay {
     padding: 0 0.5rem 0.5rem 0.5rem;
     height: 90%;
+  }
+  .card-description {
+    display: none;
+  }
+  .card-description-mobil {
+    display: block;
   }
 }

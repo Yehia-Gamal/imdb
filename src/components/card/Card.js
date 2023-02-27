@@ -34,6 +34,7 @@ const Card = ({ movie }) => {
                   <span className="card-rating">{movie ? movie.vote_average : ""}<i className="fas fa-star" /></span>
                 </div>
                 <div className="card-description">{movie ? movie.overview.slice(0, 118) + "..." : ""}</div>
+                <div className="card-description-mobil">{movie ? movie.overview.slice(0, 70) + "..." : ""}</div>
               </div>
             </div>
           </Link>

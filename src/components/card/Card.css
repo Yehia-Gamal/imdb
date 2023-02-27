@@ -30,7 +30,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  background-image: linear-gradient(rgb(0,0,0,0), rgb(0,0,0,1));
+  background-image: linear-gradient(rgb(0, 0, 0, 0), rgb(0, 0, 0, 1));
   opacity: 0;
   transition: opacity .2s;
 }
@@ -58,4 +58,18 @@
   font-style: italic;
   font-size: .75rem;
   margin-bottom: 0.25rem;
+}
+
+
+@media(max-width: 767px) {
+  .card {
+    min-width: 100px !important;
+    max-width: 100% !important;
+    height: 230px !important;
+  }
+
+  .card-overlay {
+    padding: 0 0.5rem 0.5rem 0.5rem;
+    height: 90%;
+  }
 }

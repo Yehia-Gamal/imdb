@@ -3,6 +3,7 @@ import './App.css';
 import Header from './components/header/Header';
 import MovieList from './components/movieList/MovieList';
 import Home from './components/pages/home/Home';
+import MovieDetail from './components/pages/movieDetail/MovieDetail';
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
       <Header />
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='movie/:id' element={<h1>Movie Details Page</h1>} />
+        <Route path='movie/:id' element={<MovieDetail />} />
         <Route path='movies/:type' element={<MovieList />} />
         <Route path='/*' element={<h1><a href="/">Error Page Back To Home</a></h1>} />
       </Routes>

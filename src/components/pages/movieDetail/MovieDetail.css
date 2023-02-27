@@ -2,7 +2,7 @@
   width: 100%;
   position: relative;
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   align-items: center;
 }
 
@@ -13,7 +13,7 @@
 .movie-backdrop {
   width: 100%;
   height: 500px;
-  object-fit:cover;
+  object-fit: cover;
   object-position: 0 35%;
 }
 
@@ -30,7 +30,7 @@
 }
 
 .movie-poster {
-  width:300px;
+  width: 300px;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.86) 0px 22px 40px 6px;
 }
@@ -40,10 +40,10 @@
   display: flex;
   flex-direction: column;
   height: 450px;
-  justify-content:space-between ;
+  justify-content: space-between;
 }
 
-.movie-detailRightTop > div{
+.movie-detailRightTop>div {
   text-shadow: 0px 0px 5px #000000;
   margin-bottom: .5rem;
 }
@@ -82,7 +82,8 @@
   position: relative;
   align-items: center;
 }
-.synopsisText > div:last-of-type {
+
+.synopsisText>div:last-of-type {
   margin-left: auto;
 }
 
@@ -111,12 +112,12 @@
 }
 
 .movie-homeButton {
-  background-color:rgb(255, 0, 0);
-  
+  background-color: rgb(255, 0, 0);
+
 }
 
 .movie-imdbButton {
-  background-color:#f3ce13;
+  background-color: #f3ce13;
 }
 
 .newTab {
@@ -142,4 +143,67 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+@media(max-width: 767px) {
+  .movie-intro {
+    width: 95%;
+  }
+
+  .movie-backdrop {
+    height: auto;
+  }
+
+  .movie-poster {
+    width: 120px;
+  }
+
+  .movie-detailLeft {
+    margin-right: 0px;
+    position: absolute;
+    bottom: 35%;
+    right: 0px;
+  }
+
+  .movie-detailRight {
+    margin-top: 50px;
+
+  }
+
+  .movie-detail {
+    width: 90%;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .movie-name {
+    font-size: 2rem;
+  }
+
+  .movie-genre {
+    padding: 0.5rem;
+    margin-right: 0.25rem;
+    font-size: 12px;
+  }
+
+  .movie-detailRightBottom {
+    margin: 1rem 0;
+  }
+
+  .movie-links {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .movie-heading {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+  }
+
+  .movie-production {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
 }

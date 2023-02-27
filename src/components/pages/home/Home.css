@@ -1,5 +1,5 @@
 .posterImage {
-  height: 600px;
+  height: auto;
 }
 
 .posterImage>img {
@@ -19,7 +19,7 @@
   justify-content: flex-end;
   align-items: flex-start;
   color: #fff;
-  background-image: linear-gradient(rgb(0,0,0,0), rgb(0,0,0,1));
+  background-image: linear-gradient(rgb(0, 0, 0, 0), rgb(0, 0, 0, 1));
   opacity: 1;
   transition: opacity .3s;
 }
@@ -51,4 +51,41 @@
   display: flex;
   text-align: left;
   width: 50%;
+}
+
+.posterImage-description-mobil {
+  font-style: italic;
+  font-size: .80rem;
+  margin-bottom: 0.25rem;
+  display: flex;
+  text-align: left;
+  width: 80%;
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .posterImage-overlay {
+    padding: 2rem;
+  }
+
+  .posterImage-description {
+    display: none;
+  }
+
+  .posterImage-description-mobil {
+    display: block;
+  }
+
+  .posterImage-runtime {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .posterImage-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.2rem;
+  }
+  .carousel .control-dots .dot {
+    margin: 0px 2px!important;
+  }
 }

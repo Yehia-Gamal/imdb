@@ -42,6 +42,7 @@ const Home = () => {
                     </span>
                   </div>
                   <div className="posterImage-description">{movie ? movie.overview : ""}</div>
+                  <div className="posterImage-description-mobil">{movie ? (movie.overview).slice(0, 80) : ""}</div>
                 </div>
               </Link>
             ))

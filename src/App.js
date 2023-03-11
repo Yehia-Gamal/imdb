@@ -10,10 +10,10 @@ function App() {
     <div className="App">
       <Header />
       <Routes>
-        <Route path='/' element={<Home />} />
+        <Route path='/imdb' element={<Home />} />
         <Route path='movie/:id' element={<MovieDetail />} />
         <Route path='movies/:type' element={<MovieList />} />
-        <Route path='/*' element={<h1><a href="/">Error Page Back To Home</a></h1>} />
+        <Route path='/*' element={<h1><a href="/imdb">Error Page Back To Home</a></h1>} />
       </Routes>
     </div>
   );
